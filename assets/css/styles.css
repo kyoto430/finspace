@@ -1,18 +1,37 @@
 /* fonts */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@100;300;400;700;900&family=PT+Serif:wght@400;700&display=swap');
+
 /* -------- END -------- */
 
 /*========== fonts | colors | typography ==========*/
 
 :root {
-  --body-font: Arial, Helvetica, sans-serif;
+  --body-font: 'Lato', sans-serif;
 
-  --color-dark-1: #000;
-  --color-dark-2: #333;
+  --color-dark-blue: #1d1d1d;
   --color-white: #ffffff;
+  --color-accent: #c25a87;
+  --color-additional-color-1: #f5f5f5;
+  --color-additional-color-2: #27101a;
+  --color-additional-color-3: #ae406f;
+  --color-gradient: linear-gradient(97deg, #df95b5 -1.91%, #c25a87 88.11%);
 
-  --font-text-1: 16px;
-  --font-menu: 18px;
+  --paragraph-text-1: 24px;
+  --paragraph-text-2: 20px;
+  --paragraph-text-3: 16px;
+  --paragraph-text-4: 14px;
+  --paragraph-text-5: 12px;
+
+  --paragraph-decoration-text-1: 128px;
+  --paragraph-decoration-text-2: 90px;
+  --paragraph-decoration-text-3: 64px;
+
+  --line-height-1: 36px;
+  --line-height-2: 30px;
+  --line-height-3: 24px;
+  --line-height-4: 21px;
+  --line-height-5: 18px;
 
   --font-weight-1: 400;
   --font-weight-2: 500;
@@ -73,18 +92,22 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 54px;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 48px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 h5 {
+  font-size: 24px;
+}
+
+h6 {
   font-size: 20px;
 }
 
