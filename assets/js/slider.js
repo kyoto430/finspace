@@ -1,25 +1,67 @@
 console.log('slider running...');
 
-if (window.innerWidth > 768) {
-  new Swiper('.custom__slider', {
-    // slidesPerView: 3,
-    // slidesPerGroup: 1,
-    // spaceBetween: 20,
-    loop: false,
-    navigation: {
-      prevEl: '.slider__btn-prev',
-      nextEl: '.slider__btn-next',
+new Swiper('.staff__slider', {
+  loop: false,
+  navigation: {
+    prevEl: '.slider__btn-prev--1',
+    nextEl: '.slider__btn-next--1',
+  },
+  breakpoints: {
+    1920: {
+      slidesPerView: 6,
     },
-  });
-} else {
-  new Swiper('.custom__slider', {
-    // slidesPerView: 1,
-    // slidesPerGroup: 1,
-    // spaceBetween: 20,
-    loop: false,
-    navigation: {
-      prevEl: '.slider__btn-prev',
-      nextEl: '.slider__btn-next',
+    768: {
+      slidesPerView: 2,
     },
-  });
-}
+    375: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+// --------------------------
+
+new Swiper('.staff-clients__slider', {
+  spaceBetween: 20,
+  loop: false,
+  navigation: {
+    prevEl: '.slider__btn-prev--2',
+    nextEl: '.slider__btn-next--2',
+  },
+  breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    375: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+// --------------------------------------------
+
+new Swiper('.clients__slider', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    prevEl: '.slider__btn-prev--3',
+    nextEl: '.slider__btn-next--3',
+  },
+  breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    375: {
+      slidesPerView: 1,
+    },
+  },
+});

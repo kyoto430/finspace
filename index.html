@@ -15,96 +15,354 @@
 <body>
   <header class="header container-xl">
     <div class="header__container container">
-      <a class="header__logo" href="#"><span>Logo title</span></a>
-      <nav class="header__nav">
-        <ul class="header__menu list-reset">
-          <li class="menu__item">
-            <a class="menu__link link" href="#">Menu__item-1</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#">Menu__item-2</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#">Menu__item-3</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#p">Menu__item-4</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#">Menu__item-5</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__top">
+        <a class="header__logo" href="#">
+          <img src="./assets/images/icons/logo.svg" alt="logo finspace">
+        </a>
+        <div class="header__contacts">
+          <a class="contact__link contact__mail" href="mailto:info@finspace.ru" target="_blank">info@finspace.ru</a>
+          <a class="contact__link contact__watsapp" href="#" target="_blank">8-(953) 40-20-420</a>
+          <a class="contact__link contact__phone" href="tel:+8-(953)40-20-420" target="_blank">8-(953) 40-20-420</a>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul class="header__menu list-reset">
+            <li class="menu__item">
+              <a class="menu__link link" href="#services">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#answers">Вопрос/Ответ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#about">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#sales">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#staff">Специалисты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#calls">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="overlay"></div>
       <div class="menu__burger">
         <span></span>
       </div>
     </div>
+    <section class="preview">
+      <div class="container">
+        <div class="preview__left">
+          <h1>Бухгалтерское и налоговое сопровождение <span>ООО и ИП</span>
+          </h1>
+          <p>Оказываем услугу сопровождения на допрос
+            в налоговую. Сопровождаем и участвуем
+            в камеральных и выездных проверках</p>
+          <a class="btn" href="#">Смотреть информацию</a>
+        </div>
+        <img class="preview__image" src="./assets/images/backgrounds/img-main.png" alt="woman">
+        <div class="preview__right">
+          <ul class="preview__right-list">
+            <li class="preview__right-item">
+              <span>01</span>
+              <p>Четкая и понятная
+                система тарифов</p>
+            </li>
+            <li class="preview__right-item">
+              <span>02</span>
+              <p>Профессионализм
+                сотрудников</p>
+            </li>
+            <li class="preview__right-item">
+              <span>03</span>
+              <p>Финансовая
+                ответственность</p>
+            </li>
+            <li class="preview__right-item">
+              <span>04</span>
+              <p>Партнер банков
+                первого десятка</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </header>
-  <main class="main container">
-    <h1>MAIN CONTENT</h1>
-    <!-- POPUP TEST-->
-    <a class="popup-link" href="#popup-test">TEST POPUP</a>
-    <!-- SLIDER -->
-    <div class="custom__slider swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="custom__slider-img" src="#" alt="slider img">
-          <div class="custom__slider-wrapper">
-            <div class="custom__wrapper-title">
-              <p class="custom__silider-title">TITLE</p>
-              <p class="custom__silder-subtitle">SUBTITLE</p>
+  <main class="main container-xl">
+    <section class="services mt">
+      <div class="container">
+        <div class="services__wrapper">
+          <h3>Сократите ваши расходы по бухгалтерии,
+            пользуясь нашими услугами</h3>
+          <div class="services__cards">
+            <div class="services__card">
+              <div class="services__card-inner">
+                <div class="services__card-text">
+                  <h6>Бухгалтерсксие услуги</h6>
+                  <ul class="services__card-list">
+                    <li>Ведение бухгалтерии и налогового
+                      учета;</li>
+                    <li>Составление и отправка всех форм
+                      отчетности;</li>
+                    <li>Аудит учета;</li>
+                    <li>Восстановление учета.</li>
+                  </ul>
+                  <a class="link-1" href="#">Подробнее</a>
+                </div>
+                <img src="./assets/images/services/img_accounting.png" alt="img_accounting">
+              </div>
             </div>
-            <div class="custom__slider-text">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore aperiam, delectus explicabo non
-                soluta qui nihil accusamus esse sint ipsum ipsa recusandae hic voluptates rem, est, cumque magni
-                laudantium pariatur.</p>
+            <div class="services__card">
+              <div class="services__card-inner">
+                <div class="services__card-text">
+                  <h6>Кадровое делопроизводство</h6>
+                  <ul class="services__card-list">
+                    <li>Кадровый учет;</li>
+                    <li>Воинский учет;</li>
+                    <li>Подбор сотрудников бухгалтерии;</li>
+                    <li>Составление реестров
+                      для выплаты пособий.</li>
+                  </ul>
+                  <a class="link-1" href="#">Подробнее</a>
+                </div>
+                <img src="./assets/images/services/img_persons.png" alt="img_persons">
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-inner">
+                <div class="services__card-text">
+                  <h6>Юридические услуги</h6>
+                  <ul class="services__card-list">
+                    <li>Внесение изменений в ЮГРЮЛ;</li>
+                    <li>Судебное сопровождение;</li>
+                    <li>Регистрация, ликвидация ИП и ООО;</li>
+                    <li>Предоставление юридического
+                      адреса.</li>
+                  </ul>
+                  <a class="link-1" href="#">Подробнее</a>
+                </div>
+                <img src="./assets/images/services/img_lawyer.png" alt="img_lawyer">
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-inner">
+                <div class="services__card-text">
+                  <h6>Кредитование</h6>
+                  <ul class="services__card-list">
+                    <li>Помощь в выборе лизинговой компании;</li>
+                    <li>Помощь в получении кредиты;</li>
+                  </ul>
+                  <a class="link-1" href="#">Подробнее</a>
+                </div>
+                <img src="./assets/images/services/img_credit.png" alt="img_credit">
+              </div>
             </div>
           </div>
+          <a class="link-2" href="#">Показать все услуги</a>
         </div>
-        <div class="swiper-slide">
-          <img class="custom__slider-img" src="#" alt="slider img">
-          <div class="custom__slider-wrapper">
-            <div class="custom__wrapper-title">
-              <p class="custom__silider-title">TITLE</p>
-              <p class="custom__silder-subtitle">SUBTITLE</p>
+      </div>
+    </section>
+    <section class="partners mt">
+      <div class="container">
+        <div class="partners__wrapper">
+          <h3>Партнер банков первого десятка</h3>
+          <div class="partners__cards">
+            <div class="partners__card">
+              <img src="./assets/images/partners/01.png" alt="Логотип Альфа Банк">
             </div>
-            <div class="custom__slider-text">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore aperiam, delectus explicabo non
-                soluta qui nihil accusamus esse sint ipsum ipsa recusandae hic voluptates rem, est, cumque magni
-                laudantium pariatur.</p>
+            <div class="partners__card">
+              <img src="./assets/images/partners/02.png" alt="Логотип СБЕР Банк">
+            </div>
+            <div class="partners__card">
+              <img src="./assets/images/partners/03.png" alt="Логотип ВТБ Банк">
+            </div>
+            <div class="partners__card">
+              <img src="./assets/images/partners/04.png" alt="Логотип Райффайзен Банк">
+            </div>
+            <div class="partners__card">
+              <img src="./assets/images/partners/05.png" alt="Логотип ПСБ Банк">
+            </div>
+            <div class="partners__card">
+              <img src="./assets/images/partners/06.png" alt="Логотип Тинькофф Банк">
+            </div>
+            <div class="partners__card">
+              <img src="./assets/images/partners/07.png" alt="Логотип Точка Банк">
+            </div>
+            <div class="partners__card">
+              <img src="./assets/images/partners/08.png" alt="Логотип Россельхоз Банк">
             </div>
           </div>
         </div>
       </div>
-      <div class="custom__slider-nav">
-        <div class="slider__btn-prev"></div>
-        <div class="slider__btn-next"></div>
+    </section>
+    <div class="leader">
+      <div class="container">
+        <div class="leader__wrapper">
+          <div class="leader__left">
+            <div class="leader__left-top">
+              <ul class="leader__list">
+                <li class="leader__list-item">
+                  <span>12</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="leader__list-item">
+                  <span>12</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="leader__left-bottom">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+          </div>
+          <img src="./assets/images/backgrounds/img-main-2.png" alt="woman">
+          <div class="leader__right">
+            <div class="leader__right-top">
+              <img src="./assets/images/icons/icon-1c.png" alt="Иконка 1С">
+              <p>Являемся партнерами программы 1С</p>
+            </div>
+            <div class="leader__right-bottom">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-1">
+          <div class="feedback-1__wrapper">
+            <input class="input" type="tel" name="phone" id="phone" placeholder="Введите ваш номер">
+            <a href="#" class="btn">Оставить заявку</a>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- SLIDER END -->
-    <!-- ACCORDEON -->
-    <div class="accordeon">
-      <div class="accordeon__li">
-        <input id="accordeon-item-1" type="checkbox" name="accordeon">
-        <label class="accordeon__btn" for="accordeon-item-1">
-          ACCORDEON TITLE 1
-        </label>
-        <div class="accordeon__toggle">
-          <div class="accordeon__toggle-inner">
-            <!-- content -->
-            <div class="accordeon-2">
-              <div class="accordeon-2__li">
-                <input id="accordeon-item-2-1" type="checkbox" name="accordeon">
-                <label class="accordeon-2__btn" for="accordeon-item-2-1">
-                  ACCORDEON INNER TITLE 1
-                </label>
-                <div class="accordeon-2__toggle">
-                  <div class="accordeon-2__toggle-inner">
-                    <!-- content -->
-                    <ul class="accordeon__list">
-                      <li><a href="#">ACCORDEON INNER TEXT 1</a></li>
-                    </ul>
+    <section class="lising mt">
+      <div class="container">
+        <div class="lising__wrapper">
+          <h3>Лизинговые компании</h3>
+          <div class="lising__cards">
+            <div class="lising__card">
+              <img src="./assets/images/lising/01.png" alt="Логотип Эволюция Автолизинга">
+            </div>
+            <div class="lising__card">
+              <img src="./assets/images/lising/02.png" alt="Логотип Сбер лизинг">
+            </div>
+            <div class="lising__card">
+              <img src="./assets/images/lising/03.png" alt="Логотип Альфа лизинг">
+            </div>
+            <div class="lising__card">
+              <img src="./assets/images/lising/04.png" alt="Логотип ВТБ лизинг">
+            </div>
+            <div class="lising__card">
+              <img src="./assets/images/lising/05.png" alt="Логотип Газпромбанк Автолизинг">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sales mt">
+      <div class="container">
+        <div class="sales__wrapper">
+          <h3>Выгодные акции от нашей компании</h3>
+          <div class="sales__cards">
+            <div class="sales__card sales__bg-1">
+              <div class="sales__card-text">
+                <h5>Бесплатно 1й месяц ведения бухгалтерии</h5>
+                <span>Подробности по телефону</span>
+                <a class="link-1" href="#">Заказать звонок</a>
+              </div>
+              <img class="sales__img" src="./assets/images/sales/01.png" alt="01">
+            </div>
+            <div class="sales__card sales__bg-2">
+              <div class="sales__card-inner">
+                <div class="sales__card-text">
+                  <h5>Бесплатный экспресс-аудит бухгалтерии</h5>
+                  <span>Подробности по телефону</span>
+                  <a class="link-1" href="#">Заказать звонок</a>
+                </div>
+                <img class="sales__img" src="./assets/images/sales/02.png" alt="02">
+              </div>
+            </div>
+            <div class="sales__card sales__bg-2">
+              <div class="sales__card-inner">
+                <div class="sales__card-text">
+                  <h5>Скидка 50% на восстановление бухгалтерии</h5>
+                  <span>Подробности по телефону</span>
+                  <a class="link-1" href="#">Заказать звонок</a>
+                </div>
+                <img class="sales__img" src="./assets/images/sales/03.png" alt="03">
+              </div>
+            </div>
+            <div class="sales__card sales__bg-1">
+              <div class="sales__card-text">
+                <h5>Бесплатно 1й месяц ведения бухгалтерии</h5>
+                <span>Подробности по телефону</span>
+                <a class="link-1" href="#">Заказать звонок</a>
+              </div>
+              <img class="sales__img" src="./assets/images/sales/04.png" alt="04">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work mt">
+      <div class="container">
+        <div class="work__wrapper">
+          <h3>Как мы работаем?</h3>
+          <div class="work__inner">
+            <div class="work__left">
+              <ul class="work__list">
+                <li class="work__list-item">
+                  <img src="./assets/images/work/01.png" alt="01">
+                  <div class="work__list-text">
+                    <h5>Оставьте заявку</h5>
+                    <p>Заполните форму на сайте. Мы свяжемся
+                      с вами в течение 20 минут</p>
+                  </div>
+                </li>
+                <li class="work__list-item">
+                  <img src="./assets/images/work/02.png" alt="02">
+                  <div class="work__list-text">
+                    <h5>Консультация</h5>
+                    <p>Выясняем ваши потребности,
+                      формируем задачи и их решение</p>
+                  </div>
+                </li>
+                <li class="work__list-item">
+                  <img src="./assets/images/work/03.png" alt="04">
+                  <div class="work__list-text">
+                    <h5>Подписание договора</h5>
+                    <p>Обговариваем индивидуальные сотрудничества. Заключаем договор на предоставление услуг</p>
+                  </div>
+                </li>
+                <li class="work__list-item">
+                  <img src="./assets/images/work/04.png" alt="04">
+                  <div class="work__list-text">
+                    <h5>Оплата и начало работы</h5>
+                    <p>Мы принимаем в работу вашу документацию и начинаем работу. А вы уделяете больше времени вашему
+                      бизнесу</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="feedback-2">
+              <div class="feedback-2__form">
+                <h4><span>Оставьте заявку</span> для бесплатной консультации</h4>
+                <div class="feedback-2__inputs">
+                  <input class="input" type="text" name="name" id="name-1" placeholder="Введите ваше имя">
+                  <input class="input" type="tel" name="phone" id="phone-2" placeholder="Введите ваш номер">
+                  <div class="feedback-2__btn">
+                    <a class="btn" href="#">Оставить заявку</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam </p>
                   </div>
                 </div>
               </div>
@@ -112,33 +370,478 @@
           </div>
         </div>
       </div>
-      <div class="accordeon__li">
-        <input id="accordeon-item-2" type="checkbox" name="accordeon">
-        <label class="accordeon__btn" for="accordeon-item-2">
-          ACCORDEON TITLE 2
-        </label>
-        <div class="accordeon__toggle">
-          <div class="accordeon__toggle-inner">
-            <!-- content -->
-            <p>ACCORDEON TEXT</p>
+    </section>
+    <section class="staff mt">
+      <div class="container">
+        <div class="staff__wrapper">
+          <h3>Эксперты в бухгалтерском, налоговом, кадровом учете
+            и юридическом праве и управлении персоналом</h3>
+          <!-- SLIDER -->
+          <div class="slider__wrapper">
+            <div class="staff__slider swiper">
+              <div class="swiper-wrapper staff__slider-wrapper">
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/01.jpg" alt="01">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Минаева Оксана Сергеевна</h4>
+                        <p>Основатель компании</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam
+                        tempus,
+                        non
+                        suscipit justo auctor.</p>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/02.jpg" alt="02">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam
+                        tempus,
+                        non
+                        suscipit justo auctor.</p>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/03.jpg" alt="03">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam
+                        tempus,
+                        non
+                        suscipit justo auctor.</p>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/04.jpg" alt="04">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam
+                        tempus,
+                        non
+                        suscipit justo auctor.</p>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/05.jpg" alt="05">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam
+                        tempus,
+                        non
+                        suscipit justo auctor.</p>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/06.jpg" alt="06">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam
+                        tempus,
+                        non
+                        suscipit justo auctor.</p>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="staff__slider-nav">
+              <div class="slider__btn-prev--1"></div>
+              <div class="slider__btn-next--1"></div>
+            </div>
+          </div>
+          <!-- SLIDER END -->
+        </div>
+      </div>
+    </section>
+    <section class="staff-clients mt">
+      <div class="container">
+        <div class="staff__wrapper">
+          <h3>Сопровождение клиентов</h3>
+          <!-- SLIDER -->
+          <div class="slider__wrapper">
+            <div class="staff-clients__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/04.jpg" alt="04">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/06.jpg" alt="06">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/07.jpg" alt="07">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="staff__card">
+                    <img src="./assets/images/staff/08.jpg" alt="08">
+                    <div class="staff__description">
+                      <div class="staff__title">
+                        <h4>Фамилия и имя рабочего</h4>
+                        <p>Должность</p>
+                      </div>
+                      <a class="link-1" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="staff-clients__slider-nav">
+              <div class="slider__btn-prev--2"></div>
+              <div class="slider__btn-next--2"></div>
+            </div>
+          </div>
+          <!-- SLIDER END -->
+        </div>
+      </div>
+    </section>
+    <section class="clients mt">
+      <div class="container">
+        <div class="clients__wrapper">
+          <h3>Более 1000 довольных клиентов за 50 лет работы</h3>
+          <!-- SLIDER -->
+          <div class="slider__wrapper">
+            <div class="clients__slider swiper">
+              <div class="swiper-wrapper clients__slider-wrapper">
+                <div class="swiper-slide">
+                  <div class="clients__img"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__img"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__img"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__img"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__img"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__img"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__img"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__img"></div>
+                </div>
+              </div>
+            </div>
+            <div class="clients__slider-nav">
+              <div class="slider__btn-prev--3"></div>
+              <div class="slider__btn-next--3"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- SLIDER END -->
+        </div>
+      </div>
+    </section>
+    <section class="trust mt">
+      <div class="container">
+        <div class="trust__wrapper">
+          <h3>Нам доверяют</h3>
+          <div class="trust__cards">
+            <div class="trust__card">
+              <img src="./assets/images/trust/01.png" alt="01">
+            </div>
+            <div class="trust__card">
+              <img src="./assets/images/trust/02.png" alt="02">
+            </div>
+            <div class="trust__card">
+              <img src="./assets/images/trust/03.png" alt="03">
+            </div>
+            <div class="trust__card">
+              <img src="./assets/images/trust/04.png" alt="04">
+            </div>
+            <div class="trust__card">
+              <img src="./assets/images/trust/05.png" alt="05">
+            </div>
+            <div class="trust__card">
+              <img src="./assets/images/trust/06.png" alt="06">
+            </div>
+            <div class="trust__card">
+              <img src="./assets/images/trust/07.png" alt="07">
+            </div>
+            <div class="trust__card">
+              <img src="./assets/images/trust/08.png" alt="08">
+            </div>
+            <div class="trust__card">
+              <img src="./assets/images/trust/09.png" alt="09">
+            </div>
+          </div>
+        </div>
+        <div class="team mt">
+          <img src="./assets/images/trust/img-team.png" alt="team">
+        </div>
+        <div class="feedback-3">
+          <div class="feedback-3__wrapper">
+            <div class="feedback-3__title">
+              <h3>Готовы делегировать ведение бухглатерии?</h3>
+              <p>Оставьте заявку, чтобы получить
+                1 месяц бухгалтерского обслуживания</p>
+            </div>
+            <input class="input" type="tel" name="phone" id="phone-3" placeholder="Введите ваш номер">
+            <a href="#" class="btn">Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="answers mt">
+      <div class="container">
+        <div class="answers__wrapper">
+          <h3>Вопросы и ответы</h3>
+          <div class="answers__inner">
+            <!-- ACCORDEON -->
+            <div class="accordeon">
+              <div class="accordeon__li">
+                <input id="accordeon-item-1" type="checkbox" name="accordeon">
+                <label class="accordeon__btn" for="accordeon-item-1">
+                  Аутсорсинг бухгалтерии, в чём выгода?
+                </label>
+                <div class="accordeon__toggle">
+                  <div class="accordeon__toggle-inner">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugit exercitationem velit
+                      adipisci voluptatibus, earum minima quidem doloremque. Odio animi dolores deserunt dolorum fugiat,
+                      officia minus molestiae adipisci quisquam debitis.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordeon__li">
+                <input id="accordeon-item-2" type="checkbox" name="accordeon" checked>
+                <label class="accordeon__btn" for="accordeon-item-2">
+                  Кому может потребоваться бухгалтерское обслуживание?
+                </label>
+                <div class="accordeon__toggle">
+                  <div class="accordeon__toggle-inner">
+                    <p>
+                      У руководителей компаний всегда есть выбор относительно бухгалтерского обслуживания. Первый
+                      вариант
+                      – обзавестись собственным бухгалтерским штатом, а второй – передать дела сторонней компании. В
+                      первом случае затраты будут больше, так что этот вариант актуальнее для крупных компаний. Что
+                      касается малого и среднего бизнеса, то можно остановить свой выбор на штатных сотрудниках
+                      бухгалтерского отдела. Но если бухгалтеры будут с низкой квалификацией, то в дальнейшем это
+                      выльется
+                      в большие финансовые проблемы.
+                      <br><br>
+                      Услуги бухгалтерского обслуживания – это современное, экономичное и профессиональное решение для
+                      малого и среднего бизнеса, которым сложно самостоятельно разобраться со всеми финансовыми
+                      тонкостями. «Центр бухгалтерского сопровождения» как раз включает в себя штат профессионалов,
+                      которые готовы помочь в правильном ведении бухучета с полной ответственностью за свою
+                      деятельность.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordeon__li">
+                <input id="accordeon-item-3" type="checkbox" name="accordeon">
+                <label class="accordeon__btn" for="accordeon-item-3">
+                  Ваши преимущества сотрудничества с нами
+                </label>
+                <div class="accordeon__toggle">
+                  <div class="accordeon__toggle-inner">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugit exercitationem velit
+                      adipisci voluptatibus, earum minima quidem doloremque. Odio animi dolores deserunt dolorum fugiat,
+                      officia minus molestiae adipisci quisquam debitis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ACCORDEON END -->
+            <a class="link-2" href="#">Показать все вопросы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="feedback mt">
+      <div class="container">
+        <div class="feedback-2">
+          <div class="feedback-2__form">
+            <h4>У вас остались еще вопросы, которые вы хотите задать?</h4>
+            <div class="feedback-2__inputs">
+              <input class="input" type="text" name="name" id="name-2" placeholder="Введите ваше имя">
+              <input class="input" type="tel" name="phone" id="phone-4" placeholder="Введите ваш номер">
+              <div class="feedback-2__btn">
+                <a class="btn" href="#">Оставить заявку</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- ACCORDEON END -->
+    <section class="seo-block mt">
+      <div class="container">
+        <div class="seo-block__wrapper">
+          <h3>Сео-блок с текстом (точнее бы мне знать, сколько заголовков и контента тут)</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar finibus velit eu auctor. Nulla
+            vitae dictum nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt lobortis elit sit
+            amet laoreet. Fusce sit amet sapien sem. Donec nec rutrum nisi, ut condimentum est. Vestibulum sed dapibus
+            neque. Cras viverra congue consectetur. Nam porta fermentum urna, sit amet ullamcorper enim vehicula eu.
+            Integer ut tincidunt tellus. Vivamus gravida lectus a enim ornare tincidunt.</p>
+          <a class="link-2" href="#">Раскрыть текст</a>
+        </div>
+      </div>
+    </section>
+    <section class="contacts mt">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__inner">
+            <h3>Контактная
+              информация</h3>
+            <address class="contacts__address">
+              <div class="contacts__item">
+                <p>Адрес:</p>
+                <p>Симферополь, ул. Тургенева, 13 А</p>
+              </div>
+              <div class="contacts__item">
+                <p>Телефон:</p>
+                <a href="tel:+7(953)40-20-420">+7 (953) 40-20-420</a>
+              </div>
+              <div class="contacts__item">
+                <p>E-mail:</p>
+                <a href="mailto:info@finspace.com">info@finspace.com</a>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a class="popup-link" href="#popup-feedback">TEST POPUP</a>
   </main>
   <footer class="footer container-xl">
-    <div class="footer__container container">
-      <p>FOOTER CONTENT</p>
+    <div class="container">
+      <div class="footer__top">
+        <img src="./assets/images/icons/logo.svg" alt="logo">
+        <div class="footer__top-inner">
+          <div class="footer__menu">
+            <h4>Навигация</h4>
+            <div class="footer__nav">
+              <div class="footer__nav-left">
+                <p><a href="#">Услуги</a></p>
+                <p><a href="#">Вопрос/Ответ</a></p>
+                <p><a href="#">О компании</a></p>
+              </div>
+              <div class="footer__nav-right">
+                <p><a href="#">Акции</a></p>
+                <p><a href="#">Специалисты</a></p>
+                <p><a href="#">Отзывы</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <h4>Контакты</h4>
+            <div class="footer__contacts-inner">
+              <a class="contact__link contact__mail" href="mailto:info@finspace.ru" target="_blank">info@finspace.ru</a>
+              <a class="contact__link contact__watsapp" href="#" target="_blank">8-(953) 40-20-420</a>
+              <a class="contact__link contact__phone" href="tel:+8-(953)40-20-420" target="_blank">8-(953) 40-20-420</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer__bottom">
+        <p>© 2023 «FinSpace consalting»</p>
+        <a class="link-1" href="#">Политика конфиденциальности</a>
+      </div>
     </div>
   </footer>
   <!-- POPUPS -->
-  <div id="popup-test" class="popup">
+  <div id="popup-feedback" class="popup">
     <div class="popup__body">
       <div class="popup__content">
         <a href="#" class="popup__close close-popup"></a>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus neque autem, doloremque qui recusandae
-          nam dolor quasi est quam non eos veniam odit nihil aut atque quia. Assumenda, voluptate nemo!</p>
+        <div class="popup__inner">
+          <div class="popup__title">
+            <h3>Бухгалтерские услуги</h3>
+            <p>Заполните форму ниже. Мы свяжемся с вами
+              в течение 15 минут или в указанное время.</p>
+          </div>
+          <div class="popup__wrapper">
+            <div class="popup__inputs">
+              <input class="input" type="tel" name="phone" id="phone-5" placeholder="Введите ваш номер">
+              <input class="input" type="text" name="time" id="time" placeholder="Желаемое время звонка">
+            </div>
+            <a class="btn popup-link" href="#popup-message">Получить предложение</a>
+            <p class="popup__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis
+              vel quam </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="popup-message" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#" class="popup__close close-popup"></a>
+        <div class="popup__message">
+          <h3>Ваша заявка
+            успешно отправлена</h3>
+          <p>Мы свяжемся с вами в течение 15 минут или в указанное время.</p>
+          <img src="./assets/images/popup/01.png" alt="01" />
+        </div>
       </div>
     </div>
   </div>
