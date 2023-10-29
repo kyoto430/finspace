@@ -134,3 +134,19 @@ function popups() {
 }
 
 popups();
+
+function showAll() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("btnShow");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Показать все услуги";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Скрыть услуги";
+    moreText.style.display = "flex";
+  }
+}

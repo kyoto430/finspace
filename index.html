@@ -63,7 +63,7 @@
           <p>Оказываем услугу сопровождения на допрос
             в налоговую. Сопровождаем и участвуем
             в камеральных и выездных проверках</p>
-          <a class="btn" href="#">Смотреть информацию</a>
+          <a class="btn popup-link" href="#popup-feedback">Смотреть информацию</a>
         </div>
         <img class="preview__image" src="./assets/images/backgrounds/img-main.png" alt="woman">
         <div class="preview__right">
@@ -162,8 +162,86 @@
                 <img src="./assets/images/services/img_credit.png" alt="img_credit">
               </div>
             </div>
+            <span id="dots"></span>
+            <div id="more">
+              <div class="services__card">
+                <div class="services__card-inner">
+                  <div class="services__card-text">
+                    <h6>Налоговый учет</h6>
+                    <ul class="services__card-list">
+                      <li>Анализ и оптимизация налоговой
+                        нагрузки;</li>
+                      <li>Выезд на допрос в налоговую инспекцию (ИФНС) с директором организации;</li>
+                      <li>Ускорение процессов регистрации
+                        и перерегистрации бизнеса;</li>
+                      <li>Вывод комисси без комиссии банку.</li>
+                    </ul>
+                    <a class="link-1" href="#">Подробнее</a>
+                  </div>
+                  <img src="./assets/images/services/img_nalog.png" alt="img_nalog">
+                </div>
+              </div>
+              <div class="services__card">
+                <div class="services__card-inner">
+                  <div class="services__card-text">
+                    <h6>Тендеры</h6>
+                    <ul class="services__card-list">
+                      <li>Тендерное сопровождение;</li>
+                      <li>Поиск и участие в тендерах;</li>
+                      <li>Анализ рентабельности тендерной закупки;</li>
+                      <li>Составление жалоб в ФАС на тендерную
+                        документацию и прочее.</li>
+                    </ul>
+                    <a class="link-1" href="#">Подробнее</a>
+                  </div>
+                  <img src="./assets/images/services/img_tender.png" alt="img_tender">
+                </div>
+              </div>
+              <div class="services__card">
+                <div class="services__card-inner">
+                  <div class="services__card-text">
+                    <h6>Услуги технических специалистов</h6>
+                    <ul class="services__card-list">
+                      <li>Настройка синхронизации баз учета и обновление 1С;</li>
+                      <li>Выпуск ЭЦП, в том числе на физ лиц;</li>
+                      <li>Маркировка товаров в системе "Честный знак" и техническое сопровождение;</li>
+                      <li>Подключение к сервисам сдачи отчетности и ЭДО;</li>
+                      <li>Подключение к онлайн кассам и терминалам эквайринга.</li>
+                    </ul>
+                    <a class="link-1" href="#">Подробнее</a>
+                  </div>
+                  <img src="./assets/images/services/img_tex.png" alt="img_tex">
+                </div>
+              </div>
+              <div class="services__card">
+                <div class="services__card-inner">
+                  <div class="services__card-text">
+                    <h6>Изготовление печатей и штампов в тч и срочное</h6>
+                    <ul class="services__card-list">
+                      <li>от 1700</li>
+                    </ul>
+                    <a class="link-1" href="#">Подробнее</a>
+                  </div>
+                  <img src="./assets/images/services/img_stamps.png" alt="img_stamps">
+                </div>
+              </div>
+              <div class="services__card">
+                <div class="services__card-inner">
+                  <div class="services__card-text">
+                    <h6>Рутокены</h6>
+                    <ul class="services__card-list">
+                      <li>Рутокены лайт 1900;</li>
+                      <li>Выпуск ЭЦП, в том числе на физ лиц;</li>
+                      <li>Рутокен для ЕГАИС 3000.</li>
+                    </ul>
+                    <a class="link-1" href="#">Подробнее</a>
+                  </div>
+                  <img src="./assets/images/services/img_rutocken.png" alt="img_rutocken">
+                </div>
+              </div>
+            </div>
           </div>
-          <a class="link-2" href="#">Показать все услуги</a>
+          <button class="link-2" onclick="showAll()" id="btnShow">Показать все услуги</button>
         </div>
       </div>
     </section>
@@ -223,7 +301,7 @@
                 sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
           </div>
-          <img src="./assets/images/backgrounds/img-main-2.png" alt="woman">
+          <img class="leader__img" src="./assets/images/backgrounds/img-main-2.png" alt="woman">
           <div class="leader__right">
             <div class="leader__right-top">
               <img src="./assets/images/icons/icon-1c.png" alt="Иконка 1С">
@@ -769,7 +847,6 @@
         </div>
       </div>
     </section>
-    <a class="popup-link" href="#popup-feedback">TEST POPUP</a>
   </main>
   <footer class="footer container-xl">
     <div class="container">

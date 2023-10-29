@@ -43,8 +43,11 @@
   --f-w-4: 700;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   :root {
+    --p-text-3: 14px;
+    --lh-3: 21px;
+    --p-d-text-2: 64px;
   }
 }
 /* -------- END -------- */
@@ -126,9 +129,9 @@ h6 {
   font-weight: var(--f-w-1);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   h1 {
-    font-size: 48px;
+    font-size: 54px;
   }
 
   h2 {
@@ -136,7 +139,7 @@ h6 {
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
@@ -171,6 +174,19 @@ h6 {
 .container-xl {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
 }
 
 /* -------- END -------- */
@@ -219,6 +235,13 @@ h6 {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
+}
+
+#more {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
 }
 
 /* -------- END -------- */
@@ -649,7 +672,14 @@ h6 {
   line-height: var(--l-h-2);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+  .header__container {
+    gap: 12px;
+    padding-top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
   .header__nav {
     flex-direction: column;
     justify-content: flex-start;
@@ -746,9 +776,6 @@ h6 {
     gap: 25px;
     margin: 130px 20px 0px 0px;
   }
-}
-
-@media (max-width: 768px) {
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -865,9 +892,11 @@ h6 {
   position: absolute;
   left: 30%;
   bottom: 0;
+  z-index: 2;
 }
 
 .preview__right {
+  position: relative;
   max-width: 466px;
   padding: 38px 107px 39px 60px;
   margin-top: 305px;
@@ -909,7 +938,35 @@ h6 {
   margin-top: 25px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+  .preview__left {
+    max-width: 400px;
+  }
+
+  .preview__right-item > p {
+    font-size: var(--p-text-3);
+    line-height: var(--lh-3);
+    margin-top: 20px;
+  }
+
+  .preview__right {
+    max-width: 328px;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .preview__right-item {
+    gap: 20px;
+  }
+
+  .preview__right-list {
+    padding: 6px 30px 27px 30px;
+  }
+
+  .preview__image {
+    max-width: 535px;
+    left: 32%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -924,9 +981,6 @@ h6 {
 
 .mt {
   margin-top: 150px;
-}
-
-.services {
 }
 
 .services__wrapper {
@@ -945,12 +999,12 @@ h6 {
 
 .services__cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 17px;
 }
 
 .services__card {
   max-width: 347px;
-  max-height: 532px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -986,9 +1040,6 @@ h6 {
   gap: 16px;
 }
 
-.services__card-list {
-}
-
 .services__card-list > li {
   list-style: inside;
   color: var(--color-dark-blue);
@@ -1010,6 +1061,9 @@ h6 {
   font-weight: var(--f-w-3);
   line-height: var(--l-h-2);
   text-align: center;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .link-1:hover,
@@ -1024,7 +1078,26 @@ h6 {
   color: var(--color-disabled);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+  .mt {
+    margin-top: 100px;
+  }
+
+  .services__wrapper > h3 {
+    max-width: 721px;
+  }
+
+  .services__wrapper {
+    gap: 40px;
+  }
+
+  .services__card-inner {
+    flex-direction: row;
+  }
+
+  .services__card {
+    max-width: 550px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1073,7 +1146,11 @@ h6 {
 
 /* PARTNERS */
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+  .partners__wrapper {
+    gap: 40px;
+    padding: 60px 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1199,7 +1276,34 @@ h6 {
   border: 1px solid rgba(29, 29, 29, 0.1);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+  .leader {
+    margin-top: 49px;
+  }
+
+  .leader__img {
+    max-width: 467px;
+  }
+
+  .leader__list-item > p {
+    font-size: var(--p-text-3);
+    line-height: var(--lh-3);
+  }
+
+  .leader__left-bottom > p {
+    font-size: var(--p-text-3);
+    line-height: var(--lh-3);
+  }
+
+  .leader__right-top > p {
+    font-size: var(--p-text-3);
+    line-height: var(--lh-3);
+  }
+
+  .leader__right-bottom {
+    font-size: var(--p-text-3);
+    line-height: var(--lh-3);
+  }
 }
 
 @media (max-width: 768px) {
