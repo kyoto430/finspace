@@ -10,6 +10,9 @@ new Swiper('.staff__slider', {
     1920: {
       slidesPerView: 6,
     },
+    1280: {
+      slidesPerView: 6,
+    },
     768: {
       slidesPerView: 2,
     },
@@ -22,7 +25,6 @@ new Swiper('.staff__slider', {
 // --------------------------
 
 new Swiper('.staff-clients__slider', {
-  spaceBetween: 20,
   loop: false,
   navigation: {
     prevEl: '.slider__btn-prev--2',
@@ -30,6 +32,9 @@ new Swiper('.staff-clients__slider', {
   },
   breakpoints: {
     1920: {
+      slidesPerView: 4,
+    },
+    1280: {
       slidesPerView: 4,
     },
     768: {
@@ -55,6 +60,9 @@ new Swiper('.clients__slider', {
   },
   breakpoints: {
     1920: {
+      slidesPerView: 4,
+    },
+    1280: {
       slidesPerView: 4,
     },
     768: {
