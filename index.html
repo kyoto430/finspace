@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="keywords">
   <meta name="description" content="content">
+  <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <script src="./assets/js/index.js" defer></script>
@@ -20,7 +21,7 @@
       <div class="header__burger">
         <div class="header__top">
           <a class="header__logo" href="#">
-            <img src="./assets/images/icons/logo.svg" alt="logo finspace">
+            <img src="./assets/images/icons/logo.png" loading="lazy" alt="logo finspace">
           </a>
           <div class="header__contacts">
             <a class="contact__link contact__mail" href="mailto:info@finspace.ru" target="_blank">info@finspace.ru</a>
@@ -54,7 +55,7 @@
       </div>
       <div class="overlay"></div>
       <a class="header__logo--menu" href="#">
-        <img src="./assets/images/icons/logo.svg" alt="logo finspace">
+        <img src="./assets/images/icons/logo.png" loading="lazy" alt="logo finspace">
       </a>
       <div class="menu__burger">
         <span></span>
@@ -70,7 +71,12 @@
             в камеральных и выездных проверках</p>
           <a class="btn popup-link" href="#popup-feedback">Смотреть информацию</a>
         </div>
-        <img class="preview__image" src="./assets/images/backgrounds/img-main.png" alt="woman">
+        <picture>
+          <source media="(max-width: 425px)" srcset="./assets/images/preview/04.png">
+          <source media="(max-width: 768px)" srcset="./assets/images/preview/03.png">
+          <source media="(max-width: 1440px)" srcset="./assets/images/preview/02.png">
+          <img class="preview__image" src="./assets/images/preview/01.png" alt="01">
+        </picture>
         <div class="preview__right">
           <ul class="preview__right-list">
             <li class="preview__right-item">
@@ -99,7 +105,7 @@
     </section>
   </header>
   <main class="main container-xl">
-    <section class="services mt">
+    <section class="services mt" id="services">
       <div class="container">
         <div class="services__wrapper">
           <h3>Сократите ваши расходы по бухгалтерии,
@@ -119,7 +125,7 @@
                   </ul>
                   <a class="link-1" href="#">Подробнее</a>
                 </div>
-                <img src="./assets/images/services/img_accounting.png" alt="img_accounting">
+                <img src="./assets/images/services/01.png" loading="lazy" alt="01">
               </div>
             </div>
             <div class="services__card">
@@ -135,7 +141,7 @@
                   </ul>
                   <a class="link-1" href="#">Подробнее</a>
                 </div>
-                <img src="./assets/images/services/img_persons.png" alt="img_persons">
+                <img src="./assets/images/services/02.png" loading="lazy" alt="02">
               </div>
             </div>
             <div class="services__card">
@@ -151,7 +157,7 @@
                   </ul>
                   <a class="link-1" href="#">Подробнее</a>
                 </div>
-                <img src="./assets/images/services/img_lawyer.png" alt="img_lawyer">
+                <img src="./assets/images/services/03.png" loading="lazy" alt="03">
               </div>
             </div>
             <div class="services__card">
@@ -164,11 +170,14 @@
                   </ul>
                   <a class="link-1" href="#">Подробнее</a>
                 </div>
-                <img src="./assets/images/services/img_credit.png" alt="img_credit">
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="./assets/images/services/04-1.png">
+                  <img src="./assets/images/services/04.png" loading="lazy" alt="04">
+                </picture>
               </div>
             </div>
             <span id="dots"></span>
-            <div id="more">
+            <div id="more-text">
               <div class="services__card">
                 <div class="services__card-inner">
                   <div class="services__card-text">
@@ -183,7 +192,7 @@
                     </ul>
                     <a class="link-1" href="#">Подробнее</a>
                   </div>
-                  <img src="./assets/images/services/img_nalog.png" alt="img_nalog">
+                  <img src="./assets/images/services/05.png" loading="lazy" alt="05">
                 </div>
               </div>
               <div class="services__card">
@@ -199,7 +208,7 @@
                     </ul>
                     <a class="link-1" href="#">Подробнее</a>
                   </div>
-                  <img src="./assets/images/services/img_tender.png" alt="img_tender">
+                  <img src="./assets/images/services/06.png" loading="lazy" alt="06">
                 </div>
               </div>
               <div class="services__card">
@@ -215,7 +224,7 @@
                     </ul>
                     <a class="link-1" href="#">Подробнее</a>
                   </div>
-                  <img src="./assets/images/services/img_tex.png" alt="img_tex">
+                  <img src="./assets/images/services/07.png" loading="lazy" alt="07">
                 </div>
               </div>
               <div class="services__card">
@@ -227,7 +236,7 @@
                     </ul>
                     <a class="link-1" href="#">Подробнее</a>
                   </div>
-                  <img src="./assets/images/services/img_stamps.png" alt="img_stamps">
+                  <img src="./assets/images/services/08.png" loading="lazy" alt="08">
                 </div>
               </div>
               <div class="services__card">
@@ -241,7 +250,7 @@
                     </ul>
                     <a class="link-1" href="#">Подробнее</a>
                   </div>
-                  <img src="./assets/images/services/img_rutocken.png" alt="img_rutocken">
+                  <img src="./assets/images/services/09.png" loading="lazy" alt="09">
                 </div>
               </div>
             </div>
@@ -256,34 +265,34 @@
           <h3>Партнер банков первого десятка</h3>
           <div class="partners__cards">
             <div class="partners__card">
-              <img src="./assets/images/partners/01.png" alt="Логотип Альфа Банк">
+              <img src="./assets/images/partners/01.png" loading="lazy" alt="Логотип Альфа Банк">
             </div>
             <div class="partners__card">
-              <img src="./assets/images/partners/02.png" alt="Логотип СБЕР Банк">
+              <img src="./assets/images/partners/02.png" loading="lazy" alt="Логотип СБЕР Банк">
             </div>
             <div class="partners__card">
-              <img src="./assets/images/partners/03.png" alt="Логотип ВТБ Банк">
+              <img src="./assets/images/partners/03.png" loading="lazy" alt="Логотип ВТБ Банк">
             </div>
             <div class="partners__card">
-              <img src="./assets/images/partners/04.png" alt="Логотип Райффайзен Банк">
+              <img src="./assets/images/partners/04.png" loading="lazy" alt="Логотип Райффайзен Банк">
             </div>
             <div class="partners__card">
-              <img src="./assets/images/partners/05.png" alt="Логотип ПСБ Банк">
+              <img src="./assets/images/partners/05.png" loading="lazy" alt="Логотип ПСБ Банк">
             </div>
             <div class="partners__card">
-              <img src="./assets/images/partners/06.png" alt="Логотип Тинькофф Банк">
+              <img src="./assets/images/partners/06.png" loading="lazy" alt="Логотип Тинькофф Банк">
             </div>
             <div class="partners__card">
-              <img src="./assets/images/partners/07.png" alt="Логотип Точка Банк">
+              <img src="./assets/images/partners/07.png" loading="lazy" alt="Логотип Точка Банк">
             </div>
             <div class="partners__card">
-              <img src="./assets/images/partners/08.png" alt="Логотип Россельхоз Банк">
+              <img src="./assets/images/partners/08.png" loading="lazy" alt="Логотип Россельхоз Банк">
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="leader">
+    <div class="leader" id="about">
       <div class="container">
         <div class="leader__wrapper">
           <div class="leader__left">
@@ -306,10 +315,14 @@
                 sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
           </div>
-          <img class="leader__img" src="./assets/images/backgrounds/img-main-2.png" alt="woman">
+          <picture>
+            <source media="(max-width: 425px)" srcset="./assets/images/leader/03.png">
+            <source media="(max-width: 768px)" srcset="./assets/images/leader/02.png">
+            <img class="leader__img" src="./assets/images/leader/01.png" loading="lazy" alt="01">
+          </picture>
           <div class="leader__right">
             <div class="leader__right-top">
-              <img src="./assets/images/icons/icon-1c.png" alt="Иконка 1С">
+              <img src="./assets/images/icons/icon-1c.png" loading="lazy" alt="Иконка 1С">
               <p>Являемся партнерами программы 1С</p>
             </div>
             <div class="leader__right-bottom">
@@ -323,7 +336,7 @@
         <div class="feedback-1">
           <div class="feedback-1__wrapper">
             <input class="input" type="tel" name="phone" id="phone" placeholder="Введите ваш номер">
-            <a href="#" class="btn">Оставить заявку</a>
+            <a class="btn popup-link" href="#popup-message">Оставить заявку</a>
           </div>
         </div>
       </div>
@@ -334,25 +347,25 @@
           <h3>Лизинговые компании</h3>
           <div class="lising__cards">
             <div class="lising__card">
-              <img src="./assets/images/lising/01.png" alt="Логотип Эволюция Автолизинга">
+              <img src="./assets/images/lising/01.png" loading="lazy" alt="Логотип Эволюция Автолизинга">
             </div>
             <div class="lising__card">
-              <img src="./assets/images/lising/02.png" alt="Логотип Сбер лизинг">
+              <img src="./assets/images/lising/02.png" loading="lazy" alt="Логотип Сбер лизинг">
             </div>
             <div class="lising__card">
-              <img src="./assets/images/lising/03.png" alt="Логотип Альфа лизинг">
+              <img src="./assets/images/lising/03.png" loading="lazy" alt="Логотип Альфа лизинг">
             </div>
             <div class="lising__card">
-              <img src="./assets/images/lising/04.png" alt="Логотип ВТБ лизинг">
+              <img src="./assets/images/lising/04.png" loading="lazy" alt="Логотип ВТБ лизинг">
             </div>
             <div class="lising__card">
-              <img src="./assets/images/lising/05.png" alt="Логотип Газпромбанк Автолизинг">
+              <img src="./assets/images/lising/05.png" loading="lazy" alt="Логотип Газпромбанк Автолизинг">
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="sales mt">
+    <section class="sales mt" id="sales">
       <div class="container">
         <div class="sales__wrapper">
           <h3>Выгодные акции от нашей компании</h3>
@@ -363,7 +376,7 @@
                 <span>Подробности по телефону</span>
                 <a class="link-1" href="#">Заказать звонок</a>
               </div>
-              <img class="sales__img" src="./assets/images/sales/01.png" alt="01">
+              <img class="sales__img" src="./assets/images/sales/01.png" loading="lazy" alt="01">
             </div>
             <div class="sales__card sales__bg-2">
               <div class="sales__card-inner">
@@ -372,7 +385,7 @@
                   <span>Подробности по телефону</span>
                   <a class="link-1" href="#">Заказать звонок</a>
                 </div>
-                <img class="sales__img" src="./assets/images/sales/02.png" alt="02">
+                <img class="sales__img" src="./assets/images/sales/02.png" loading="lazy" alt="02">
               </div>
             </div>
             <div class="sales__card sales__bg-2">
@@ -382,7 +395,7 @@
                   <span>Подробности по телефону</span>
                   <a class="link-1" href="#">Заказать звонок</a>
                 </div>
-                <img class="sales__img" src="./assets/images/sales/03.png" alt="03">
+                <img class="sales__img" src="./assets/images/sales/03.png" loading="lazy" alt="03">
               </div>
             </div>
             <div class="sales__card sales__bg-1">
@@ -391,7 +404,7 @@
                 <span>Подробности по телефону</span>
                 <a class="link-1" href="#">Заказать звонок</a>
               </div>
-              <img class="sales__img" src="./assets/images/sales/04.png" alt="04">
+              <img class="sales__img" src="./assets/images/sales/04.png" loading="lazy" alt="04">
             </div>
           </div>
         </div>
@@ -405,7 +418,7 @@
             <div class="work__left">
               <ul class="work__list">
                 <li class="work__list-item">
-                  <img src="./assets/images/work/01.png" alt="01">
+                  <img src="./assets/images/work/01.png" loading="lazy" alt="01">
                   <div class="work__list-text">
                     <h5>Оставьте заявку</h5>
                     <p>Заполните форму на сайте. Мы свяжемся
@@ -413,7 +426,7 @@
                   </div>
                 </li>
                 <li class="work__list-item">
-                  <img src="./assets/images/work/02.png" alt="02">
+                  <img src="./assets/images/work/02.png" loading="lazy" alt="02">
                   <div class="work__list-text">
                     <h5>Консультация</h5>
                     <p>Выясняем ваши потребности,
@@ -421,14 +434,14 @@
                   </div>
                 </li>
                 <li class="work__list-item">
-                  <img src="./assets/images/work/03.png" alt="04">
+                  <img src="./assets/images/work/03.png" loading="lazy" alt="04">
                   <div class="work__list-text">
                     <h5>Подписание договора</h5>
                     <p>Обговариваем индивидуальные сотрудничества. Заключаем договор на предоставление услуг</p>
                   </div>
                 </li>
                 <li class="work__list-item">
-                  <img src="./assets/images/work/04.png" alt="04">
+                  <img src="./assets/images/work/04.png" loading="lazy" alt="04">
                   <div class="work__list-text">
                     <h5>Оплата и начало работы</h5>
                     <p>Мы принимаем в работу вашу документацию и начинаем работу. А вы уделяете больше времени вашему
@@ -443,10 +456,10 @@
                 <div class="feedback-2__inputs">
                   <input class="input" type="text" name="name" id="name-1" placeholder="Введите ваше имя">
                   <input class="input" type="tel" name="phone" id="phone-2" placeholder="Введите ваш номер">
-                  <div class="feedback-2__btn">
-                    <a class="btn" href="#">Оставить заявку</a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam </p>
-                  </div>
+                </div>
+                <div class="feedback-2__btn">
+                  <a class="btn popup-link" href="#popup-message">Оставить заявку</a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam </p>
                 </div>
               </div>
             </div>
@@ -454,7 +467,7 @@
         </div>
       </div>
     </section>
-    <section class="staff mt">
+    <section class="staff mt" id="staff">
       <div class="container">
         <div class="staff__wrapper">
           <h3>Эксперты в бухгалтерском, налоговом, кадровом учете
@@ -465,7 +478,7 @@
               <div class="swiper-wrapper staff__slider-wrapper">
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/01.jpg" alt="01">
+                    <img src="./assets/images/staff/01.jpg" loading="lazy" alt="01">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Минаева Оксана Сергеевна</h4>
@@ -481,7 +494,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/02.jpg" alt="02">
+                    <img src="./assets/images/staff/02.jpg" loading="lazy" alt="02">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -497,7 +510,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/03.jpg" alt="03">
+                    <img src="./assets/images/staff/03.jpg" loading="lazy" alt="03">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -513,7 +526,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/04.jpg" alt="04">
+                    <img src="./assets/images/staff/04.jpg" loading="lazy" alt="04">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -529,7 +542,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/05.jpg" alt="05">
+                    <img src="./assets/images/staff/05.jpg" loading="lazy" alt="05">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -545,7 +558,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/06.jpg" alt="06">
+                    <img src="./assets/images/staff/06.jpg" loading="lazy" alt="06">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -581,7 +594,7 @@
               <div class="swiper-wrapper staff-clients__wrapper">
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/04.jpg" alt="04">
+                    <img src="./assets/images/staff/04.jpg" loading="lazy" alt="04">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -593,7 +606,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/06.jpg" alt="06">
+                    <img src="./assets/images/staff/06.jpg" loading="lazy" alt="06">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -605,7 +618,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/07.jpg" alt="07">
+                    <img src="./assets/images/staff/07.jpg" loading="lazy" alt="07">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -617,7 +630,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="staff__card">
-                    <img src="./assets/images/staff/08.jpg" alt="08">
+                    <img src="./assets/images/staff/08.jpg" loading="lazy" alt="08">
                     <div class="staff__description">
                       <div class="staff__title">
                         <h4>Фамилия и имя рабочего</h4>
@@ -639,7 +652,7 @@
         </div>
       </div>
     </section>
-    <section class="clients mt">
+    <section class="clients mt" id="calls">
       <div class="container">
         <div class="clients__wrapper">
           <h3>Более 1000 довольных клиентов за 50 лет работы</h3>
@@ -689,36 +702,41 @@
           <h3>Нам доверяют</h3>
           <div class="trust__cards">
             <div class="trust__card">
-              <img src="./assets/images/trust/01.png" alt="01">
+              <img src="./assets/images/trust/01.png" loading="lazy" alt="01">
             </div>
             <div class="trust__card">
-              <img src="./assets/images/trust/02.png" alt="02">
+              <img src="./assets/images/trust/02.png" loading="lazy" alt="02">
             </div>
             <div class="trust__card">
-              <img src="./assets/images/trust/03.png" alt="03">
+              <img src="./assets/images/trust/03.png" loading="lazy" alt="03">
             </div>
             <div class="trust__card">
-              <img src="./assets/images/trust/04.png" alt="04">
+              <img src="./assets/images/trust/04.png" loading="lazy" alt="04">
             </div>
             <div class="trust__card">
-              <img src="./assets/images/trust/05.png" alt="05">
+              <img src="./assets/images/trust/05.png" loading="lazy" alt="05">
             </div>
             <div class="trust__card">
-              <img src="./assets/images/trust/06.png" alt="06">
+              <img src="./assets/images/trust/06.png" loading="lazy" alt="06">
             </div>
             <div class="trust__card">
-              <img src="./assets/images/trust/07.png" alt="07">
+              <img src="./assets/images/trust/07.png" loading="lazy" alt="07">
             </div>
             <div class="trust__card">
-              <img src="./assets/images/trust/08.png" alt="08">
+              <img src="./assets/images/trust/08.png" loading="lazy" alt="08">
             </div>
             <div class="trust__card">
-              <img src="./assets/images/trust/09.png" alt="09">
+              <img src="./assets/images/trust/09.png" loading="lazy" alt="09">
             </div>
           </div>
         </div>
         <div class="team mt">
-          <img src="./assets/images/trust/img-team.png" alt="team">
+          <picture>
+            <source media="(max-width: 425px)" srcset="./assets/images/trust/10-3.png">
+            <source media="(max-width: 768px)" srcset="./assets/images/trust/10-2.png">
+            <source media="(max-width: 1440px)" srcset="./assets/images/trust/10-1.png">
+            <img src="./assets/images/trust/10.png" loading="lazy" alt="team">
+          </picture>
         </div>
         <div class="feedback-3">
           <div class="feedback-3__wrapper">
@@ -728,12 +746,12 @@
                 1 месяц бухгалтерского обслуживания</p>
             </div>
             <input class="input" type="tel" name="phone" id="phone-3" placeholder="Введите ваш номер">
-            <a href="#" class="btn">Оставить заявку</a>
+            <a class="btn popup-link" href="#popup-message">Оставить заявку</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="answers mt">
+    <section class="answers mt" id="answers">
       <div class="container">
         <div class="answers__wrapper">
           <h3>Вопросы и ответы</h3>
@@ -743,7 +761,7 @@
               <div class="accordeon__li" id="acc">
                 <input id="accordeon-item-1" type="checkbox" name="accordeon">
                 <label class="accordeon__btn" for="accordeon-item-1">
-                  Аутсорсинг бухгалтерии, в чём выгода?
+                  <span>Аутсорсинг бухгалтерии, в чём выгода?</span>
                 </label>
                 <div class="accordeon__toggle">
                   <div class="accordeon__toggle-inner">
@@ -756,7 +774,7 @@
               <div class="accordeon__li">
                 <input id="accordeon-item-2" type="checkbox" name="accordeon" checked>
                 <label class="accordeon__btn" for="accordeon-item-2">
-                  Кому может потребоваться бухгалтерское обслуживание?
+                  <span>Кому может потребоваться бухгалтерское обслуживание?</span>
                 </label>
                 <div class="accordeon__toggle">
                   <div class="accordeon__toggle-inner">
@@ -782,7 +800,7 @@
               <div class="accordeon__li">
                 <input id="accordeon-item-3" type="checkbox" name="accordeon">
                 <label class="accordeon__btn" for="accordeon-item-3">
-                  Ваши преимущества сотрудничества с нами
+                  <span> Ваши преимущества сотрудничества с нами</span>
                 </label>
                 <div class="accordeon__toggle">
                   <div class="accordeon__toggle-inner">
@@ -801,16 +819,23 @@
     </section>
     <div class="feedback mt">
       <div class="container">
+        <picture>
+          <source media="(max-width: 425px)" srcset="./assets/images/form/04.png">
+          <source media="(max-width: 768px)" srcset="./assets/images/form/03.png">
+          <source media="(max-width: 1440px)" srcset="./assets/images/form/02.png">
+          <img loading="lazy" src="./assets/images/form/01.png" alt="01">
+        </picture>
         <div class="feedback-2">
           <div class="feedback-2__form">
             <h4>У вас остались еще вопросы, которые вы хотите задать?</h4>
             <div class="feedback-2__inputs">
               <input class="input" type="text" name="name" id="name-2" placeholder="Введите ваше имя">
               <input class="input" type="tel" name="phone" id="phone-4" placeholder="Введите ваш номер">
-              <div class="feedback-2__btn">
-                <a class="btn" href="#">Оставить заявку</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam </p>
-              </div>
+
+            </div>
+            <div class="feedback-2__btn">
+              <a class="btn popup-link" href="#popup-message">Оставить заявку</a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula felis vel quam </p>
             </div>
           </div>
         </div>
@@ -825,7 +850,7 @@
             himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt lobortis elit sit
             amet laoreet. Fusce sit amet sapien sem. Donec nec rutrum nisi, ut condimentum est. Vestibulum sed dapibus
             neque. Cras viverra congue consectetur. Nam porta fermentum urna, sit amet ullamcorper enim vehicula eu.
-            Integer ut tincidunt tellus. Vivamus gravida lectus a enim ornare tincidunt.</p>
+            Integer ut tincidunt tellus. Vivamus gravida lectus a enim ornare tincidunt</p>
           <a class="link-2" href="#">Раскрыть текст</a>
         </div>
       </div>
@@ -858,20 +883,20 @@
   <footer class="footer container-xl">
     <div class="container">
       <div class="footer__top">
-        <img src="./assets/images/icons/logo.svg" alt="logo">
+        <a href="#"><img src="./assets/images/icons/logo.png" loading="lazy" alt="logo"></a>
         <div class="footer__top-inner">
           <div class="footer__menu">
             <h4>Навигация</h4>
             <div class="footer__nav">
               <div class="footer__nav-left">
-                <p><a href="#">Услуги</a></p>
-                <p><a href="#">Вопрос/Ответ</a></p>
-                <p><a href="#">О компании</a></p>
+                <p><a href="#services">Услуги</a></p>
+                <p><a href="#answers">Вопрос/Ответ</a></p>
+                <p><a href="#about">О компании</a></p>
               </div>
               <div class="footer__nav-right">
-                <p><a href="#">Акции</a></p>
-                <p><a href="#">Специалисты</a></p>
-                <p><a href="#">Отзывы</a></p>
+                <p><a href="#sales">Акции</a></p>
+                <p><a href="#staff">Специалисты</a></p>
+                <p><a href="#calls">Отзывы</a></p>
               </div>
             </div>
           </div>
@@ -924,7 +949,7 @@
           <h3>Ваша заявка
             успешно отправлена</h3>
           <p>Мы свяжемся с вами в течение 15 минут или в указанное время.</p>
-          <img src="./assets/images/popup/01.png" alt="01">
+          <img src="./assets/images/popup/01.png" loading="lazy" alt="01">
         </div>
       </div>
     </div>
