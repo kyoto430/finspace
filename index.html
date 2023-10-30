@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="keywords">
+  <meta name="description" content="content">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <script src="./assets/js/index.js" defer></script>
@@ -15,18 +17,18 @@
 <body>
   <header class="header container-xl">
     <div class="header__container container">
-      <div class="header__top">
-        <a class="header__logo" href="#">
-          <img src="./assets/images/icons/logo.svg" alt="logo finspace">
-        </a>
-        <div class="header__contacts">
-          <a class="contact__link contact__mail" href="mailto:info@finspace.ru" target="_blank">info@finspace.ru</a>
-          <a class="contact__link contact__watsapp" href="#" target="_blank">8-(953) 40-20-420</a>
-          <a class="contact__link contact__phone" href="tel:+8-(953)40-20-420" target="_blank">8-(953) 40-20-420</a>
+      <div class="header__burger">
+        <div class="header__top">
+          <a class="header__logo" href="#">
+            <img src="./assets/images/icons/logo.svg" alt="logo finspace">
+          </a>
+          <div class="header__contacts">
+            <a class="contact__link contact__mail" href="mailto:info@finspace.ru" target="_blank">info@finspace.ru</a>
+            <a class="contact__link contact__watsapp" href="#" target="_blank">8-(953) 40-20-420</a>
+            <a class="contact__link contact__phone" href="tel:+8-(953)40-20-420" target="_blank">8-(953) 40-20-420</a>
+          </div>
         </div>
-      </div>
-      <div class="line"></div>
-      <div class="header__bottom">
+        <div class="line"></div>
         <nav class="header__nav">
           <ul class="header__menu list-reset">
             <li class="menu__item">
@@ -51,6 +53,9 @@
         </nav>
       </div>
       <div class="overlay"></div>
+      <a class="header__logo--menu" href="#">
+        <img src="./assets/images/icons/logo.svg" alt="logo finspace">
+      </a>
       <div class="menu__burger">
         <span></span>
       </div>
@@ -561,6 +566,7 @@
               <div class="slider__btn-next--1"></div>
             </div>
           </div>
+          <div class="swiper-pagination s__p--1"></div>
           <!-- SLIDER END -->
         </div>
       </div>
@@ -628,6 +634,7 @@
               <div class="slider__btn-next--2"></div>
             </div>
           </div>
+          <div class="swiper-pagination s__p--2"></div>
           <!-- SLIDER END -->
         </div>
       </div>
@@ -671,7 +678,7 @@
               <div class="slider__btn-next--3"></div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination s__p--3"></div>
           <!-- SLIDER END -->
         </div>
       </div>
@@ -733,7 +740,7 @@
           <div class="answers__inner">
             <!-- ACCORDEON -->
             <div class="accordeon">
-              <div class="accordeon__li">
+              <div class="accordeon__li" id="acc">
                 <input id="accordeon-item-1" type="checkbox" name="accordeon">
                 <label class="accordeon__btn" for="accordeon-item-1">
                   Аутсорсинг бухгалтерии, в чём выгода?
@@ -917,7 +924,7 @@
           <h3>Ваша заявка
             успешно отправлена</h3>
           <p>Мы свяжемся с вами в течение 15 минут или в указанное время.</p>
-          <img src="./assets/images/popup/01.png" alt="01" />
+          <img src="./assets/images/popup/01.png" alt="01">
         </div>
       </div>
     </div>
