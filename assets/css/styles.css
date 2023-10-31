@@ -207,6 +207,10 @@ h6 {
   display: block;
 }
 
+.ac {
+  background-color: #98a2b3 !important;
+}
+
 #more-blocks {
   display: none;
   flex-wrap: wrap;
