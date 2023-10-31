@@ -169,6 +169,7 @@ h6 {
 @media (max-width: 660px) {
   h1 {
     font-size: 32px;
+    padding: 0px 20px;
   }
 
   h3 {
@@ -206,27 +207,31 @@ h6 {
   display: block;
 }
 
-#more-text {
+#more-blocks {
   display: none;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 20px;
 }
 
+#more-text {
+  display: none;
+}
+
 @media (max-width: 1440px) {
-  #more-text {
+  #more-blocks {
     justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
-  #more-text {
+  #more-blocks {
     justify-content: flex-start;
   }
 }
 
 @media (max-width: 660px) {
-  #more-text {
+  #more-blocks {
     flex-direction: column;
   }
 }
@@ -417,7 +422,7 @@ input:focus {
 .staff__slider-nav,
 .staff-clients__slider-nav {
   position: absolute;
-  width: 100%;
+  width: 97%;
   display: flex;
   justify-content: space-between;
   top: 50%;
@@ -426,51 +431,84 @@ input:focus {
   z-index: 3;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
+}
+
 .slider__btn-prev--1,
 .slider__btn-prev--2 {
-  width: 36px;
-  height: 36px;
+  width: 36px !important;
+  height: 36px !important;
   display: block;
-  background: url('../images/icons/arrow-left-2.svg');
+  background: url('../images/icons/arrow-right-2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
   border: none;
   cursor: pointer;
+}
+
+.slider__btn-prev--1 .swiper-button-disabled,
+.slider__btn-prev--2 .swiper-button-disabled {
+  background: url('../images/icons/arrow-left-2.svg') !important;
 }
 
 .slider__btn-next--1,
 .slider__btn-next--2 {
-  width: 36px;
-  height: 36px;
+  width: 36px !important;
+  height: 36px !important;
   display: block;
   background: url('../images/icons/arrow-right-2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
 
+.slider__btn-next--1 .swiper-button-disabled,
+.slider__btn-next--2 .swiper-button-disabled {
+  background: url('../images/icons/arrow-left-2.svg') !important;
+}
+
 .slider__btn-next--3 {
-  width: 36px;
-  height: 36px;
+  width: 36px !important;
+  height: 36px !important;
   display: block;
   background: url('../images/icons/arrow-left-1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
 
 .slider__btn-prev--3 {
-  width: 36px;
-  height: 36px;
+  width: 36px !important;
+  height: 36px !important;
   display: block;
-  background: url('../images/icons/arrow-right-1.svg');
+  background: url('../images/icons/arrow-left-1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
   border: none;
   cursor: pointer;
+}
+
+.slider__btn-prev--3 .swiper-button-disabled {
+  background: url('../images/icons/arrow-right-1.svg') !important;
+}
+
+.slider__btn-next--3 .swiper-button-disabled {
+  background: url('../images/icons/arrow-right-1.svg') !important;
 }
 
 @media (max-width: 660px) {
   .clients__slider-nav,
   .staff__slider-nav,
   .staff-clients__slider-nav {
-    position: inherit;
+    position: relative;
     width: 95%;
-    bottom: -65px;
+    bottom: -35px;
     z-index: 3;
   }
 }
@@ -1472,12 +1510,6 @@ input:focus {
   }
 }
 
-@media (max-width: 768px) {
-}
-
-@media (min-width: 320px) and (max-width: 425px) {
-}
-
 /* -------- END -------- */
 
 /* LEADER */
@@ -1706,9 +1738,6 @@ input:focus {
   .lising__card {
     max-width: 320px;
   }
-}
-
-@media (min-width: 320px) and (max-width: 425px) {
 }
 
 /* -------- END -------- */
@@ -2388,15 +2417,6 @@ input:focus {
   gap: 40px;
 }
 
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
-}
-
-@media (min-width: 320px) and (max-width: 425px) {
-}
-
 /* -------- END -------- */
 
 /* FEEDBACK */
@@ -2465,12 +2485,6 @@ input:focus {
   .seo-block__wrapper > h3 {
     max-width: 706px;
   }
-}
-
-@media (max-width: 768px) {
-}
-
-@media (min-width: 320px) and (max-width: 425px) {
 }
 
 /* -------- END -------- */
@@ -2545,9 +2559,9 @@ input:focus {
 }
 
 @media (max-width: 768px) {
-}
-
-@media (min-width: 320px) and (max-width: 425px) {
+  .contacts__wrapper {
+    padding: 20px 0px 20px 20px;
+  }
 }
 
 /* -------- END -------- */

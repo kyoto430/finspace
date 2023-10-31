@@ -65,7 +65,7 @@ new Swiper('.staff-clients__slider', {
 // --------------------------------------------
 
 new Swiper('.clients__slider', {
-  loop: true,
+  loop: false,
   pagination: {
     el: '.s__p--3',
     clickable: true,

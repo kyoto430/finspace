@@ -135,10 +135,10 @@ function popups() {
 
 popups();
 
-function showAll() {
-  var dots = document.getElementById('dots');
-  var moreText = document.getElementById('more-text');
-  var btnText = document.getElementById('btnShow');
+function showAllCards() {
+  var dots = document.getElementById('dots-1');
+  var moreText = document.getElementById('more-blocks');
+  var btnText = document.getElementById('btnMoreBlocks');
 
   if (dots.style.display === 'none') {
     dots.style.display = 'inline';
@@ -147,6 +147,22 @@ function showAll() {
   } else {
     dots.style.display = 'none';
     btnText.innerHTML = 'Скрыть услуги';
+    moreText.style.display = 'flex';
+  }
+}
+
+function showAllText() {
+  var dots = document.getElementById('dots-2');
+  var moreText = document.getElementById('more-text');
+  var btnText = document.getElementById('btnMoreText');
+
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    btnText.innerHTML = 'Раскрыть текст';
+    moreText.style.display = 'none';
+  } else {
+    dots.style.display = 'none';
+    btnText.innerHTML = 'Скрыть текст';
     moreText.style.display = 'flex';
   }
 }
