@@ -169,7 +169,7 @@ h6 {
 @media (max-width: 660px) {
   h1 {
     font-size: 32px;
-    padding: 0px 20px;
+    padding: 0px 60px;
   }
 
   h3 {
@@ -1210,6 +1210,19 @@ input:focus {
   margin-top: 25px;
 }
 
+@media (max-width: 1800px) {
+  .preview__image {
+    max-width: 650px;
+  }
+}
+
+
+@media (max-width: 1700px) {
+  .preview__image {
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 1440px) {
   .preview__left {
     max-width: 400px;
@@ -1278,6 +1291,8 @@ input:focus {
   .preview__right-list {
     max-width: 400px;
     padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(29, 29, 29, 0.1);
   }
 }
 
@@ -1645,6 +1660,22 @@ input:focus {
     font-size: var(--p-text-3);
     line-height: var(--lh-3);
   }
+
+  .leader__list-item {
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .leader__wrapper {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .leader__wrapper picture {
+    margin: 0 auto;
+    order: 3;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1653,22 +1684,12 @@ input:focus {
     padding: 10px;
   }
 
-  .leader__wrapper {
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
   .leader__right {
     max-width: 325px;
   }
 
   .leader__left {
     max-width: 325px;
-  }
-
-  .leader__wrapper picture {
-    margin: 0 auto;
-    order: 3;
   }
 }
 
@@ -2560,7 +2581,7 @@ input:focus {
 
 @media (max-width: 768px) {
   .contacts__wrapper {
-    padding: 20px 0px 20px 20px;
+    padding: 20px;
   }
 }
 
