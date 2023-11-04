@@ -243,36 +243,11 @@ h6 {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .container-xl {
   max-width: 1920px;
   margin: 0 auto;
-}
-
-@media (max-width: 1840px) {
-  .container {
-    border: 1px solid cyan;
-  }
-}
-
-@media (max-width: 1740px) {
-  .container {
-    border: 1px solid orchid;
-  }
-}
-
-@media (max-width: 1640px) {
-  .container {
-    border: 1px solid orange;
-  }
-}
-
-@media (max-width: 1540px) {
-  .container {
-    border: 1px solid blue;
-  }
 }
 
 @media (max-width: 1440px) {
@@ -281,13 +256,6 @@ h6 {
     margin: 0 auto;
   }
 }
-
-@media (max-width: 1340px) {
-  .container {
-    border: 1px solid lime;
-  }
-}
-
 
 @media (max-width: 1440px) {
   .container {
