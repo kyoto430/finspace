@@ -137,17 +137,17 @@ popups();
 
 function showAllCards() {
   var dots = document.getElementById('dots-1');
-  var moreText = document.getElementById('more-blocks');
-  var btnText = document.getElementById('btnMoreBlocks');
+  var moreBlocks = document.getElementById('more-blocks');
+  var btnBlocks = document.getElementById('btnMoreBlocks');
 
   if (dots.style.display === 'none') {
     dots.style.display = 'inline';
-    btnText.innerHTML = 'Показать все услуги';
-    moreText.style.display = 'none';
+    btnBlocks.innerHTML = 'Показать все услуги';
+    moreBlocks.style.display = 'none';
   } else {
     dots.style.display = 'none';
-    btnText.innerHTML = 'Скрыть услуги';
-    moreText.style.display = 'flex';
+    btnBlocks.innerHTML = 'Скрыть услуги';
+    moreBlocks.style.display = 'flex';
   }
 }
 
@@ -164,5 +164,21 @@ function showAllText() {
     dots.style.display = 'none';
     btnText.innerHTML = 'Скрыть текст';
     moreText.style.display = 'flex';
+  }
+}
+
+function showAllAccords() {
+  var dots = document.getElementById('dots-3');
+  var moreAccords = document.getElementById('more-accords');
+  var btnAccords = document.getElementById('btnMoreAccords');
+
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    btnAccords.innerHTML = 'Показать все вопросы';
+    moreAccords.style.display = 'none';
+  } else {
+    dots.style.display = 'none';
+    btnAccords.innerHTML = 'Скрыть вопросы';
+    moreAccords.style.display = 'flex';
   }
 }
