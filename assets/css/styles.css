@@ -2519,9 +2519,6 @@ input:focus {
 
 .contacts {
   position: relative;
-  background-image: url('../images/contacts/01.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contacts__wrapper {
@@ -2580,13 +2577,8 @@ input:focus {
   font-style: normal;
 }
 
-.contacts__map-link::before {
-  content: '';
+.contacts__map {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 1440px) {
