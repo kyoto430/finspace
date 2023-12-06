@@ -1,6 +1,6 @@
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@100;300;400;700;900&family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
@@ -1266,7 +1266,6 @@ input:focus {
   }
 }
 
-
 @media (max-width: 1024px) {
   .preview__image {
     max-width: 375px;
@@ -1900,6 +1899,10 @@ input:focus {
   .sales__card:nth-child(1) img {
     margin-right: -25px;
   }
+
+  .sales__card:nth-child(2) img {
+    margin-right: -10px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2037,7 +2040,7 @@ input:focus {
 }
 
 .feedback-2__inputs > .input {
-  max-width: 300px;
+  min-width: 305px;
   height: 65px;
   background-color: var(--color-additional-color-1);
 }
@@ -2121,6 +2124,16 @@ input:focus {
   }
   .services__cards {
     justify-content: center;
+  }
+
+  .feedback-2__inputs > .input {
+    min-width: 295px;
+  }
+}
+
+@media (max-width: 320px) {
+  .feedback-2__inputs > .input {
+    min-width: 240px;
   }
 }
 
