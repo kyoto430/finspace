@@ -12,20 +12,20 @@ new Swiper('.staff__slider', {
   },
   uniqueNavElements: false,
   breakpoints: {
-    1920: {
-      slidesPerView: 6,
-    },
-    1280: {
-      slidesPerView: 6,
-    },
-    1230: {
-      slidesPerView: 2,
+    375: {
+      slidesPerView: 1,
     },
     768: {
       slidesPerView: 2,
     },
-    375: {
-      slidesPerView: 1,
+    1230: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+      },
     },
   },
 });
@@ -51,7 +51,7 @@ new Swiper('.staff-clients__slider', {
       slidesPerView: 4,
     },
     1230: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 2,
